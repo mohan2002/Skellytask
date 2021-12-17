@@ -1,0 +1,67 @@
+.shippingheader-container{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    color: rgb(39, 39, 39);
+}
+
+.content{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.rightmost{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.line{
+    border: 1px solid #e6e6e6;
+    height: 2px;
+    width: 80px;
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cart,.truck{
+    height: 36px;
+    width: 36px;
+    border: 1px solid #aaa8a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.truck{
+    background-color: #7AD0A7;
+    border:none;
+}
+
+@media all and (max-width:470px){
+    .shippingheader-container{
+        padding: 10px;
+    }
+    .rightmost{
+        margin-left: 0px;
+    }
+}
+
+
+@media all and (max-width:400px){
+    .shippingheader-container{
+        padding: 10px;
+    }
+    .line
+    {
+        width: 40px;
+    }
+    .rightmost{
+        margin-right: -7px;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(39, 39, 39);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

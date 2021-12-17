@@ -1,0 +1,310 @@
+.maincomp-container{
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    color: rgb(39, 39, 39);
+}
+
+.main-content{
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.main-left{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.auth-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.auth-btn1{
+    width:125px;
+    height: 45px;
+    border: 1.2px solid #cecdcd;
+    background-color: transparent;
+    border-radius: 32px;
+    font-size: 0.77rem;
+    cursor: pointer;
+}
+.clr{
+    background-color: #7AD0A7;
+    border: none;
+    color: white;
+}
+
+.inputs{
+    display: grid;
+    padding-top: 20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.shipping{
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+
+.inputs input{
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 14px;
+    border-radius: 25px;
+    border: 1.2px solid #a8a8a8c7;
+    outline: none;
+}
+
+.inputs input::placeholder{
+    color: #7272729c;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+
+.main-center{
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logos{
+    height: 23px;
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.payments{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding-right: 20px;
+    margin:30px 0px 30px 0px;
+}
+
+.logobox{
+    height: 45px;
+    width: 130px;
+    border: 1px solid #cecdcd;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.pd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.delivery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin:30px 0px 30px 0px;
+}
+
+.deliverybox{
+    height: 50px;
+    width: 190px;
+    border: 1px solid #cecdcd;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 0.80rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.main-right{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shirt{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.products-details{
+    font-size: 0.9rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+
+.code{
+    margin-top: 6px;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+
+.totalcost{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    background-color: #eee;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px 0px 20px;
+    border-radius: 30px;   
+}
+
+.dls{
+    font-weight: 600;
+}
+
+.remarks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.remarks p{
+    width:50%;
+    font-size: 0.85rem;
+}
+
+
+
+.bottom-btns{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.back i{
+    cursor: pointer;
+}
+
+.continuebtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;  
+}
+.shopbtn{
+    width:180px;
+    height: 45px;
+    border: 1px solid rgb(71, 70, 70);
+    background-color: transparent;
+    border-radius: 32px;  
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.prcd{
+    border: none;
+    background-color: #7AD0A7;
+    color: white;
+}
+
+@media all and (max-width:960px){
+    .maincomp-container{
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content
+    {
+        flex-direction: column;
+    }
+    .main-left, .main-center, .main-right{
+        width: 100%;
+    }
+    .bottom-btns{
+        position: absolute;
+        bottom: -120vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media all and (max-width:500px){
+    .maincomp-container{
+        height: 263vh;
+        padding:10px;
+    }
+    .main-left{
+        height: 100vh;
+    }
+    .inputs{
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .payments{  
+        grid-template-columns: repeat(2,1fr);
+        padding-right: 0px;
+        padding-right: 0px;
+    }   
+    .delivery{
+        gap: 10px;
+    }
+    
+    .logobox{
+        width: 160px;
+    }
+    .deliverybox{
+        width: 160px;
+    }
+    .continuebtns{
+        flex-direction: column;
+    }
+    .bottom-btns{
+        bottom: -170vh;
+    }
+}
